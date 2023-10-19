@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %} Giriş Yap {% endblock %} {% block
+content %}
+
+<div style="background-color: rgb(197, 197, 197); opacity: 0.8">
+  <form action="" method="POST">
+    <h3 align="center">Giriş Yap</h3>
+    <div>
+      <label for="email">Email Adresi</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+    </div>
+
+    <div>
+      <label for="password">Şifre</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="Enter your email"
+      />
+    </div>
+    {% if verification_needed == "True" %}
+
+    <div>
+      <label for="verification">Dogrulama Kodu</label>
+      <input
+        type="text"
+        class="form-control"
+        id="verification"
+        name="verification"
+        placeholder="Dogrulama kodunu giriniz."
+      />
+    </div>
+
+    {% endif %}
+
+    <br />
+
+    <button align="center" type="submit" class="btn btn-primary">
+      Giriş Yap
+    </button>
+  </form>
+</div>
+
+{% endblock %}

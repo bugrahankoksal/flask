@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block title %} Sign up {% endblock %} {% block
+content %}
+
+<div style="background-color: rgb(197, 197, 197); opacity: 0.8">
+  <form action="" method="POST">
+    <h3 align="center">Sign Up</h3>
+    <div>
+      <label for="email">Email Adresi</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+    </div>
+
+    <div>
+      <label for="firstname"> Adınız</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstname"
+        name="firstname"
+        placeholder="Enter your name"
+      />
+    </div>
+
+    <div>
+      <label for="password1">Şifre</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password1"
+        name="password1"
+        placeholder="Enter your sifre"
+      />
+    </div>
+
+    <div>
+      <label for="password2">Şifreyi tekrar giriniz</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password2"
+        name="password2"
+        placeholder="Enter your confirm"
+      />
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Kaydol</button>
+  </form>
+</div>
+
+{% endblock %}
